@@ -17,7 +17,7 @@
           <script src="jquery/respond.min.js"></script>
          <![endif]-->
     </head>
-    <body>
+    <body style="overflow-x: hidden;">
         <style> 
             .flip
             {
@@ -34,9 +34,6 @@
                 {
                     width: 1280px !important;
                 }
-            }
-            @media only screen and (max-width: 1280px)
-            {
                 #net
                 {
                     width: 1280px !important;
@@ -199,7 +196,7 @@
                 <div id="headerText" style=";  color: #fff; padding-top: 330px; padding-left: 40px;height: 700px" data-pg-collapsed>
                     <p style="font-size:45px; font-weight: bold; margin-bottom: 5px; line-height: 1; ">Customized English Learning Solutions </p>
                     <p style="font-size: 30px; line-height: 1;">Corporate. Non-Profits. Education. Individuals</p>
-                    <p style="text-align: center; margin-top: 200px"><span id="vlInfoArrow" class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 50px; opacity: 0.5; cursor: pointer;"></span></p>
+                    <p style="text-align: center; margin-top: 150px;"><span id="vlInfoArrow" class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 50px; opacity: 0.5; cursor: pointer;"></span></p>
                 </div>
                 <div id="vlInfo" style="height: 630px; background-color: white;">
                     <div class="col-sm-8 vlinformation" style="padding: 45px; " data-pg-collapsed>
@@ -246,50 +243,50 @@
                     </div>
                     <div class="col-sm-4" id="verticalNav" style="padding: 0px;">
                         <div class="mArrow" onclick="setVLInformation(0);" style="height: 70px;  background-color: #343434; padding: 10px; position: relative; cursor: pointer;">
-                            <div style="position: absolute; top: 0px; left: -36px; display: none"> 
+                            <div style="position: absolute; top: 0px; left: -33px; display: none"> 
                                 <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-01.png"/>             
                             </div>
-                            <h5 class="hvr" style="font-weight: bold; font-size: 20px; color: white; float: left; margin-left: 90px; ">Why Virtual Lingos?</h5>
+                            <h5 style="font-weight: bold; font-size: 20px; color: white; float: left; margin-left: 90px; ">Why Virtual Lingos?</h5>
                         </div>
                         <div class="mArrow" onclick="setVLInformation(1);" style="height: 140px;  background-color: #f75a56; padding:13px; position: relative; cursor: pointer;">
-                            <div style="position: absolute; top: 0px; left: -36px; display: none; "> 
+                            <div style="position: absolute; top: 0px; left: -33px; display: none; "> 
                                 <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-02.png"/>             
                             </div>
-                            <img class="hvr" class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style=" width:70px; margin-top: 10px; float: left; margin-right: 10px; margin-left: 10px;"/>
-                            <div class="hvr" style=" float:  left; color: white;  text-align: left; margin-top: -10px;  ">
+                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style=" width:70px; margin-top: 10px; float: left; margin-right: 10px; margin-left: 10px;"/>
+                            <div style=" float:  left; color: white;  text-align: left; margin-top: -10px;  ">
                                 <h4 style="font-weight: bold; font-size: 20px; margin-bottom: -7px;">Corporate Solutions</h4>
                                 <h5 style="font-weight: 300; ">Improve employee <br/> engagement through <br/>education.</h5>
                                 <p style="color: white; font-weight: bold; font-size: 17px; ">Learn more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="vertical-align: -1px; font-size: 15px;"></span> </p>
                             </div>
                         </div>
                         <div  class="mArrow" onclick="setVLInformation(2);" style="height: 140px;  background-color: #f0a247; padding: 10px; cursor: pointer; position: relative;">
-                            <div style="position: absolute; top: 0px; left: -36px; display: none; "> 
+                            <div style="position: absolute; top: 0px; left: -33px; display: none; "> 
                                 <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-03.png"/>             
                             </div>
-                            <img class="hvr" class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-white.png" style=" width: 70px; margin-top: 14px; float: left; margin-right: 10px; margin-left: 10px;"/>
-                            <div class="hvr" style="float: left; color: white;  text-align: left;">
+                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-white.png" style=" width: 70px; margin-top: 14px; float: left; margin-right: 10px; margin-left: 10px;"/>
+                            <div style="float: left; color: white;  text-align: left;">
                                 <h4 style="font-weight: bold; font-size: 20px; margin-bottom: -7px; ">Nonprofits</h4>
                                 <h5 style="font-weight: 300; ">Customized & Affordable <br/> solutions built just for you.</h5>
                                 <p style="color: white; font-weight: bold; font-size: 17px; ">Learn more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="vertical-align: -1px;; font-size: 15px;"></span> </p>
                             </div>
                         </div>
                         <div class="mArrow" onclick="setVLInformation(3);" style="height: 140px;  background-color: #92b865; padding: 8px; cursor: pointer; position: relative;">
-                            <div style="position: absolute; top: 0px; left: -36px; display: none; "> 
+                            <div style="position: absolute; top: 0px; left: -33px; display: none; "> 
                                 <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-04.png"/>             
                             </div>
-                            <img class="hvr" class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-white.png" style=" width: 75px; margin-top: 17px; float: left; margin-right: 10px; margin-left: 10px;"/>
-                            <div class="hvr" style=" float: left; color: white;  text-align: left;">
+                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-white.png" style=" width: 75px; margin-top: 17px; float: left; margin-right: 10px; margin-left: 10px;"/>
+                            <div style=" float: left; color: white;  text-align: left;">
                                 <h4 style="font-weight: bold; font-size: 20px; margin-bottom: -8px;">Education</h4>
                                 <h5 style="font-weight: 300; ">Give your students a <br/>more engaging experience <br/>through your own platform</h5>
                                 <p style="color: white; font-weight: bold; font-size: 17px; ">Learn more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="vertical-align: -1px;; font-size: 15px;"></span> </p>
                             </div>
                         </div>
                         <div class="mArrow" onclick="setVLInformation(4);" style="height: 140px;  background-color: #259baa; padding: 8px; cursor: pointer; position: relative;">
-                            <div style="position: absolute; top: 0px; left: -36px; display: none; "> 
-                                <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu_05.png"/>             
+                            <div style="position: absolute; top: 0px; left: -33px; display: none; "> 
+                                <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-05.png"/>             
                             </div>
-                            <img class="hvr" class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-white.png" style=" width: 80px; margin-top: 25px; float:  left; margin-right: 10px;  margin-left: 10px;"/>
-                            <div class="hvr" style="float: left; color: white;  text-align: left;">
+                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-white.png" style=" width: 80px; margin-top: 25px; float:  left; margin-right: 10px;  margin-left: 10px;"/>
+                            <div style="float: left; color: white;  text-align: left;">
                                 <h4 style="font-weight: bold; font-size: 20px; margin-bottom: -7px;">Individuals</h4>
                                 <h5 style="font-weight: 300; ">1 on 1 private classes or do it <br/>yourself learning Virtual Lingos <br/> has a solution just for you.</h5>
                                 <p style="color: white; font-weight: bold; font-size: 17px; ">Learn more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="vertical-align: -1px;; font-size: 15px;"></span> </p>
@@ -297,7 +294,6 @@
                         </div>
                     </div>
                 </div>
-                <div style="clear: both;"></div>
                 <div id="customerService" style=" height: 630px; padding-left: 70px; padding-top: 150px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background_customer.png); background-size: cover; color: white;" data-pg-collapsed>
                     <p style="font-size:60px; font-weight: bold; margin-bottom: -15px; ">5 Star Customer Service </p>
                     <h3>Our goal is to be the number 1 company <br/>
@@ -437,52 +433,51 @@
         </div>
         <script>
             $(document).ready(function () {
-            $("#net").height($("#video").height());
-            $(window).resize(function () {
+                
+                $("#net").height($("#video").height());
+                $(window).resize(function () {
 
-            var h = $("#video").height();
-            $("#net").height(h);
+                    var h = $("#video").height();
+                    $("#net").height(h);
+                });
+                
+                $("#vlInfoArrow").click(function () {
+
+                    var h = parseInt($("#headerText").css('height').toString().split("p")[0]);
+                    $(window).scrollTop(h - 47);
+                });
+                
+                $(window).scroll(function (event) {
+
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 40) {
+
+                        $("#header1").css("display", "none");
+                    } else {
+
+                        $("#header1").css("display", "block");
+                    }
+
+                });
+                
+                $(".mArrow").hover(function () {
+
+                    $(".mArrow").each(function(){
+                        
+                        $($(this).children().get(0)).css("display", "none");
+                    });
+                    $($(this).children().get(0)).css("display", "block");
+                });
             });
-            $("#vlInfoArrow").click(function () {
-
-            var h = $("#video").height();
-            $(window).scrollTop(h - 47);
-            });
-            $(window).scroll(function (event) {
-
-            var scroll = $(window).scrollTop();
-            if (scroll > 40) {
-
-            $("#header1").css("display", "none");
-            } else {
-
-            $("#header1").css("display", "block");
-            }
-
-            });
-            });
-            $(".mArrow").hover(function () {
-
-            $($(this).children().get(0)).css("display", "block");
-            }).mouseout(function () {
-                $($(this).children().get(0)).css("display", "none");
-            });
-            
-            $(".hvr").hover(function () {
-
-            $($(this).parent().children().get(0)).css("display", "block");
-            }).mouseout(function () {
-                $($(this).parent().children().get(0)).css("display", "none");
-            });
-            
             function setVLInformation(index) {
 
-            $(".vlinformation").each(function () {
+                $('.tempArrow').remove();
+                $(".vlinformation").each(function () {
 
-            $(this).css("display", "none");
-            });
-            $($(".vlinformation").get(index)).css("display", "block");
-            $($(".mArrow").get(index)).css("display", "block");
+                    $(this).css("display", "none");
+                });
+                $($(".vlinformation").get(index)).css("display", "block");
+                $($(".mArrow").get(index)).append('<div class="tempArrow" style="position: absolute; top: 0px; left: -33px;"><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-0' + (index + 1) + '.png"/></div>');
             }
 
         </script>
