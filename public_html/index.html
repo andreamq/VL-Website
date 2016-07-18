@@ -120,28 +120,57 @@
 
                 color: #30aed5 !important;
             }
-            
+
             .footerlink a:link {
-                
+
                 color: white;
-                
+
             }
             .footerlink a:visited {
-                
+
                 color: white;
                 text-decoration: none;
             }
             .footerlink a:hover {
-                
+
                 color: #30aed5;
                 text-decoration: none;
             }
             .footerlink a:active {
-                
-                
+
+
                 text-decoration: none;
             }
-            
+            @media only screen and (max-width:  770px)
+            {
+                .vnavdesktop
+                {
+                    display: none;
+                }
+            }
+            @media only screen and (min-width: 770px)
+            {
+                .vnavdesktop
+                {
+                    display: block;
+                }
+            }
+            @media only screen and (max-width:  770px)
+            {
+                #vlInfoMobil
+                {
+                    display: block;
+                }
+            }
+            @media only screen and (min-width: 770px)
+            {
+                #vlInfoMobil
+                {
+                    display: none;
+                }
+            }
+
+
 
 
         </style>
@@ -220,14 +249,14 @@
                     <p style="font-size: 30px; line-height: 1;">Corporate. Non-Profits. Education. Individuals</p>
                     <p style="text-align: center; margin-top: 150px;"><span id="vlInfoArrow" class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 50px; opacity: 0.5; cursor: pointer;"></span></p>
                 </div>
-                <div id="vlInfo" style="height: 630px; background-color: white;">
-                    <div class="col-sm-8 vlinformation" style="padding: 45px; " data-pg-collapsed>
+                <div class="vnavdesktop" id="vlInfo" style="height: 630px; background-color: white;">
+                    <div class="col-md-8 col-sm-6 vlinformation" style="padding: 45px; " data-pg-collapsed>
                         <h3 style="color: #30aed5; font-weight: bold;">Why Virtual Lingos?</h3>
                         <p style="color: grey; text-align: justify;">Virtual Lingos is dedicated to creating and developing the most affordable and effective language learning solutions in Latin America. <br/><br/>
                             Our VL platform is a state of the art learning platform that allows Corporations, Nonprofits and Schools to provide their teams/students with a customized learning experience. Your colors, logos and curriculum backed by our technology creates an amazing experience at an incredibly affordable cost. </p>
                         <img class="img-responsive center-block" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width: 90%; margin-top: 25px; "/>
                     </div>
-                    <div class="col-sm-8 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
+                    <div class="col-md-8 col-sm-6 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
                         <h3 style="color: #f75a56; font-weight: bold; ">Corporate Solutions</h3>
                         <p style="color: grey; text-align: justify;">Are you looking for language learning solution for your team that has proven results that engage its students and drive learning! Virtual Lingos has a solution just for you. <br/>
                             From 1 on 1 customized lessons to our engaging platform we can deliver you a solution that meetings your financial and developmental needs. </p>
@@ -238,7 +267,7 @@
                         <div style="clear: both;"></div>
                         <button type="button" class="btn btn-default" style="background-color: #f75a56;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
                     </div>
-                    <div class="col-sm-8 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
+                    <div class="col-md-8 col-sm-6 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
                         <h3 style="color: #f0a247; font-weight: bold; ">NonProfits</h3>
                         <p style="color: grey; text-align: justify;">Virtual Lingos not only fits in the TechEd space but, also the Social Entrepreneurship space. <br/>
                             We at Virtual Lingos are dedicated to serving those in need and are have special pricing and solutions just for NGO’s and NonProfits.  </p>
@@ -247,7 +276,7 @@
                         <div style="clear: both;"></div>
                         <button type="button" class="btn btn-default" style="background-color: #f0a247;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
                     </div>
-                    <div class="col-sm-8 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
+                    <div class="col-md-8 col-sm-6 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
                         <h3 style="color: #92b865; font-weight: bold; ">Education</h3>
                         <p style="color: grey; text-align: justify;">Public or Private, High School or University; Virtual Lingos has the perfect solution to fit your needs. With our customized platforms your students can engage with each other and their teachers 24/7 on our innovative platform. </p>
                         <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Customized Solutions<br/> Teacher Support</p>
@@ -255,7 +284,7 @@
                         <div style="clear: both;"></div>
                         <button type="button" class="btn btn-default" style="background-color: #92b865;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
                     </div>
-                    <div class="col-sm-8 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
+                    <div class="col-md-8 col-sm-6 vlinformation" style="padding: 45px; background-color: white; height: 500px; display: none;" data-pg-collapsed>
                         <h3 style="color: #259baa; font-weight: bold; ">Individuals</h3>
                         <p style="color: grey; text-align: justify;">Want a language solution just for you? Virtual Lingos not only provides it’s services to some of the top companies in Latin America but, also to individuals just like yourself everyday. Our custom solutions are here to meet your every need! </p>
                         <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Our Platform<br/> Pricing</p>
@@ -263,7 +292,7 @@
                         <div style="clear: both;"></div>
                         <button type="button" class="btn btn-default" style="background-color: #259baa;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
                     </div>
-                    <div class="col-sm-4" id="verticalNav" style="padding: 0px;">
+                    <div class="col-md-4 col-sm-6" id="verticalNav" style="padding: 0px;">
                         <div class="mArrow" onclick="setVLInformation(0);" style="height: 70px;  background-color: #343434; padding: 10px; position: relative; cursor: pointer;">
                             <div style="position: absolute; top: 0px; left: -36px; display: none"> 
                                 <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-01.png"/>             
@@ -312,6 +341,98 @@
                                 <h5 style="font-weight: bold; font-size: 20px; margin-bottom: -7px;">Individuals</h5>
                                 <h6 style="font-weight: 300; ">1 on 1 private classes or do it <br/>yourself learning Virtual Lingos <br/> has a solution just for you.</h6>
                                 <p style="color: white; font-weight: bold; font-size: 17px; ">Learn more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="vertical-align: -1px;; font-size: 15px;"></span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="vlInfoMobil" style="background-color: white; margin" data-pg-collapsed>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin-bottom: 0px;">
+                        <div class="panel panel-default" style="margin: 0px;" data-pg-collapsed>
+                            <div class="panel-heading" role="tab" id="headingOne" style="background-color: #343434; color: white;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Why Virtual Lingos?</a></h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <h3 style="color: #30aed5; font-weight: bold;">Why Virtual Lingos?</h3>
+                                    <p style="color: grey; text-align: justify;">Virtual Lingos is dedicated to creating and developing the most affordable and effective language learning solutions in Latin America. <br/><br/>
+                                        Our VL platform is a state of the art learning platform that allows Corporations, Nonprofits and Schools to provide their teams/students with a customized learning experience. Your colors, logos and curriculum backed by our technology creates an amazing experience at an incredibly affordable cost. </p>
+                                    <img class="img-responsive center-block" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width: 100%; margin-top: 20px; margin-bottom: 10px; "/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" style="margin: 0px;" data-pg-collapsed>
+                            <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #f75a56; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="vertical-align: -8px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style=" width:34px; float: left; margin-right: 10px;"/>                                                                                 Corporate Solutions
+                                    </a></h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <h3 style="color: #f75a56; font-weight: bold; ">Corporate Solutions</h3>
+                                    <p style="color: grey; text-align: justify;">Are you looking for language learning solution for your team that has proven results that engage its students and drive learning! Virtual Lingos has a solution just for you. <br/>
+                                        From 1 on 1 customized lessons to our engaging platform we can deliver you a solution that meetings your financial and developmental needs. </p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Customized Solutions<br/>
+                                        Teacher Support</p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Get A Demo<br/>
+                                        Our Mission</p>
+                                    <div style="clear: both;"></div>
+                                    <button type="button" class="btn btn-default" style="background-color: #f75a56;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" style="margin: 0px;" data-pg-collapsed>
+                            <div class="panel-heading" role="tab" id="headingThree" style="background-color: #f0a247; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="vertical-align: -8px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-white.png" style=" width:34px; float: left; margin-right: 10px;"/>                                                                                NonProfits
+                                    </a></h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <h3 style="color: #f0a247; font-weight: bold; ">NonProfits</h3>
+                                    <p style="color: grey; text-align: justify;">Virtual Lingos not only fits in the TechEd space but, also the Social Entrepreneurship space. <br/>
+                                        We at Virtual Lingos are dedicated to serving those in need and are have special pricing and solutions just for NGO’s and NonProfits.  </p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Customized Solutions<br/>Teacher Support</p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Get A Demo<br/> Our Mission</p>
+                                    <div style="clear: both;"></div>
+                                    <button type="button" class="btn btn-default" style="background-color: #f0a247;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" style="margin: 0px;" data-pg-collapsed>
+                            <div class="panel-heading" role="tab" id="headingFour" style="background-color: #92b865; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="vertical-align: -9px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-white.png" style=" width:34px; float: left; margin-right: 10px;"/>
+                                        Education 
+                                    </a></h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <h3 style="color: #92b865; font-weight: bold; ">Education</h3>
+                                    <p style="color: grey; text-align: justify;">Public or Private, High School or University; Virtual Lingos has the perfect solution to fit your needs. With our customized platforms your students can engage with each other and their teachers 24/7 on our innovative platform. </p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Customized Solutions<br/> Teacher Support</p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Get A Demo<br/>Teachera</p>
+                                    <div style="clear: both;"></div>
+                                    <button type="button" class="btn btn-default" style="background-color: #92b865;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" style="margin: 0px;" data-pg-collapsed>
+                            <div class="panel-heading" role="tab" id="headingFive" style="background-color: #259baa; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="vertical-align: -11px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-white.png" style=" width:34px; float: left; margin-right: 10px; margin-top: 6px;"/>
+                                        Individuals
+                                    </a></h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <h3 style="color: #259baa; font-weight: bold; ">Individuals</h3>
+                                    <p style="color: grey; text-align: justify;">Want a language solution just for you? Virtual Lingos not only provides it’s services to some of the top companies in Latin America but, also to individuals just like yourself everyday. Our custom solutions are here to meet your every need! </p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Our Platform<br/> Pricing</p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> 1 on 1 Lessons<br/> Our Mission & Vision</p>
+                                    <div style="clear: both;"></div>
+                                    <button type="button" class="btn btn-default" style="background-color: #259baa;  color: white; border: 0px; font-size: 20px; margin-top: 20px;">Learn More</button>
+                                </div>
                             </div>
                         </div>
                     </div>
