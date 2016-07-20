@@ -213,7 +213,7 @@
                         <div class="collapse navbar-collapse" style="float: right;" data-pg-collapsed>
                             <ul class="nav navbar-nav" data-pg-collapsed>
                                 <li>
-                                    <a href="#">Platform</a>
+                                    <a id="PlatformLink" href="#">Platform</a>
                                 </li>
                                 <li>
                                     <a href="#">Pricing</a>
@@ -575,8 +575,13 @@
             </div>
         </div>
         <script>
+        var domain = "http://wp.virtuallingos.com/";    
+        
+    
             $(document).ready(function () {
-
+                
+                $("#PlatformLink").attr("href",domain + "corporate-solutions/");
+                
                 $("#net").height($("#video").height());
                 $(window).resize(function () {
 
