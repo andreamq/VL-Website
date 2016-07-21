@@ -20,107 +20,149 @@
     <body>
         <style>
             .flip
-{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -ms-filter: "FlipH";
-    filter: FlipH;
-}
+            {
+                -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                -ms-filter: "FlipH";
+                filter: FlipH;
+            }
 
-@media only screen and (max-width: 1280px)
-{
-    #video
-    {
-        width: 1280px !important;
-    }
-    #net
-    {
-        width: 1280px !important;
-    }
-}
+            @media only screen and (max-width: 1280px)
+            {
+                #video
+                {
+                    width: 1280px !important;
+                }
+                #net
+                {
+                    width: 1280px !important;
+                }
+            }
 
-@media only screen and (min-width: 1280px)
-{
-    #video
-    {
-        height: auto !important;
-    }
-}
+            @media only screen and (min-width: 1280px)
+            {
+                #video
+                {
+                    height: auto !important;
+                }
+            }
 
-.blogImg:hover
-{
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%) !important;
-}
+            .blogImg:hover
+            {
+                filter: grayscale(0%);
+                -webkit-filter: grayscale(0%) !important;
+            }
 
-.blogHvr:hover
-{
-    background-color: #f2f2f2;
-}
+            .blogHvr:hover
+            {
+                background-color: #f2f2f2;
+            }
 
-.footerlink
-{
-    color: white;
-}
+            .footerlink a:link {
 
-.footerlink:hover
-{
-    color: #30aed5;
-    text-decoration: none;
-}
+                color: white;
 
-.footerlink:active
-{
-    color: #808080;
-}
+            }
+            .footerlink a:visited {
 
-@media only screen and (max-width:  770px)
-{
-    .vnavdesktop
-    {
-        display: none;
-    }
-    #vlInfoMobil
-    {
-        display: block;
-    }
-}
+                color: white;
+                text-decoration: none;
+            }
+            .footerlink a:hover {
 
-@media only screen and (min-width: 770px)
-{
-    .vnavdesktop
-    {
-        display: block;
-    }
-    #vlInfoMobil
-    {
-        display: none;
-    }
-}
-
-.tab2:hover
-{
-    background-color: #f0a247 !important;
-    color: #ffffff !important;
-}
+                color: #30aed5;
+                text-decoration: none;
+            }
+            .footerlink a:active {
 
 
-.tab3:hover
-{
-    background-color: #92b865 !important;
-    color: #ffffff !important;
-}
+                text-decoration: none;
+            }
 
-.tab4:hover
-{
-    background-color: #259baa !important;
-    color: #ffffff !important;
-}
+            @media only screen and (max-width:  770px)
+            {
+                .vnavdesktop
+                {
+                    display: none;
+                }
+                #vlInfoMobil
+                {
+                    display: block;
+                }
+                #csdesktop
+                {
+                    display: none;
+                }
+                #csMobil
+                {
+                    display: block;
+                }
+                #footer
+                {
+                    padding: 50px !important;
+                    font-size: 11px;
+                }
+                #iconshdr
+                {
+                    display: inline-block;
+
+                }
+                #messageicon
+                {
+                    margin-right: 10px;
+                }
+            }
+
+            @media only screen and (min-width: 770px)
+            {
+                .vnavdesktop
+                {
+                    display: block;
+                }
+                #vlInfoMobil
+                {
+                    display: none;
+                }
+                #csdesktop
+                {
+                    display: block;
+                }
+                #csMobil
+                {
+                    display: none;
+                }
+            }
+
+            .tab2:hover
+            {
+                background-color: #f0a247 !important;
+                color: #ffffff !important;
+            }
 
 
-</style>
+            .tab3:hover
+            {
+                background-color: #92b865 !important;
+                color: #ffffff !important;
+            }
+
+            .tab4:hover
+            {
+                background-color: #259baa !important;
+                color: #ffffff !important;
+            }
+            .tab1:hover
+            {
+                background-color: #f75a56 !important;
+                color: #ffffff !important;
+            }
+
+
+
+
+        </style>
         <div class="container-fluid" style="position: relative;">
             <div id="code" style="position: absolute; top: 0px; left: 0px; z-index: 2; width: 100%; height: auto; overflow-x: hidden;">
                 <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: white; border-bottom: 1px solid #bcbcbc;" data-pg-collapsed>
@@ -140,7 +182,7 @@
                     </div>
                     <div id="header2" data-pg-collapsed>
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#343434;">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -150,10 +192,10 @@
                                 <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/logo-blue.png" style="width:180px; margin-top: -5px;"/>
                             </a>
                         </div>
-                        <div class="collapse navbar-collapse" style="float: right;" data-pg-collapsed>
-                            <ul class="nav navbar-nav" data-pg-collapsed>
+                        <div class="collapse navbar-collapse" style="float: right;  border-top: 0px" data-pg-collapsed>
+                            <ul class="nav navbar-nav" data-pg-collapsed style="text-align: right;">
                                 <li>
-                                    <a href="#">Platform</a>
+                                    <a id="PlatformLink" href="#">Platform</a>
                                 </li>
                                 <li>
                                     <a href="#">Pricing</a>
@@ -161,19 +203,19 @@
                                 <li>
                                     <a href="#">(505) 2266-0509</a>
                                 </li>
-                                <li>
-                                    <a id="callButton" href="#" style="width: 40px; height: 50px">
+                                <li id="iconshdr">
+                                    <a  href="#" style="width: 40px; height: 50px">
                                         <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/header-call.png" style="width: 25px; "/>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" style="width: 40px; height: 50px">
+                                <li id="iconshdr">
+                                    <a  href="#" style="width: 40px; height: 50px">
                                         <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/header-chat.png" style="width: 25px; "/>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" style=" width: 40px; height: 50px">
-                                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/header-message.png" style="width: 25px; "/>
+                                <li id="iconshdr">
+                                    <a  id="messageicon" href="#" style=" width: 40px; height: 50px">
+                                        <img  alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/header-message.png" style="width: 25px; "/>
                                     </a>
                                 </li>
                                 <li style=" background-color: #30aed5; padding: 13px; height: 50px; margin-left: 10px;">
@@ -184,176 +226,957 @@
                         <!--/.nav-collapse -->
                     </div>
                 </div>
-                <div id="headerTab" style="margin-top: 90px;" data-pg-collapsed>
-                    <a href="#"> 
-                        <div class="col-sm-3  tab1" style="height: 130px; background-color: #f75a56; color: white; text-align: center; padding: 10px;">
-                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style="width: 80px;"/>
-                            <p style="font-size: 18px; "> Corporate Solutions</p> 
-                        </div>                         
-                    </a>
-                    <a href="#"> 
-                        <div class="col-sm-3  tab2" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
-                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-grey.png" style="width: 55px;"/>
-                            <p> Nonprofits</p> 
-                        </div>                         
-                    </a>
-                    <a href="#"> 
-                        <div class="col-sm-3  tab3" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
-                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-grey.png" style="width: 55px;"/>
-                            <p style="margin-left: -8px;">Education</p> 
-                        </div>                         
-                    </a>
-                    <a href="#"> 
-                        <div class="col-sm-3 tab4" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 17px;">
-                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-grey.png" style="width: 65px;"/>
-                            <p> Individuals</p> 
-                        </div>                         
-                    </a>
+                <div id="csdesktop" style="margin-top: 90px;">
+                    <div class="platforminfo" id="corporateSolutions" data-pg-collapsed>
+                        <div id="headerTab" data-pg-collapsed>
+                            <a href="#" onclick="setPLAtforminfo(0);"> 
+                                <div class="col-sm-3 col-xs-3 tab1" style="height: 130px; background-color: #f75a56; color: white; text-align: center; padding: 10px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style="width: 80px;"/>
+                                    <p style="font-size: 18px; "> Corporate Solutions</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(1);"> 
+                                <div class="col-sm-3 col-xs-3 tab2" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-grey.png" style="width: 55px;"/>
+                                    <p> Nonprofits</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(2);"> 
+                                <div class="col-sm-3 col-xs-3 tab3" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-grey.png" style="width: 55px;"/>
+                                    <p style="margin-left: -8px;">Education</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(3);"> 
+                                <div class="col-sm-3 col-xs-3 tab4" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 17px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-grey.png" style="width: 65px;"/>
+                                    <p> Individuals</p> 
+                                </div>                 
+                            </a>
+                        </div>
+                        <div id="headerback" style="color: #fff; padding-top: 220px; padding-left: 60px;height: 590px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-corporate-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style=""/>
+                            <p style="font-size:45px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">CORPORATE SOLUTIONS </p>
+                            <p style="font-size: 27px; line-height: 1;">Customized English learning solutions built just for your business. </p>
+                            <p style="text-align: center; margin-top: 150px;"></p>
+                        </div>
+                        <div class="row" id="overview" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-right: 20px; padding-top:70px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Overview</font><br/>
+                                    Invest in your team’s education and Increase engagement by signing up with Virtual Lingos; the most affordable and effective way to learn a language. <br/><br/>
+                                    Virtual Lingos primary focus is to provide the most effective and affordable solutions to businesses across LATAM. Our business model has solutions to fit any need a company might have with prices ranging from $4.00 - $200.00 per month. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solution-overview.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="Methodology" style="padding: 50px;" data-pg-collapsed>
+                            <div class="col-sm-6" style=" text-align: center " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding: 30px; " data-pg-collapsed>
+                                <p style="color: grey; text-align: right;  margin-right: 150px;" data-pg-collapsed> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;" data-pg-collapsed>
+                            <p style=" color: #f75a56; font-family: Impact; font-size: 35px; margin-left: 20px"> Our Learning Platform</p>
+                        </div>
+                        <div class="row" id="games" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 30px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
+                                    Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="videos" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-left: 60px; padding-right: 60px; padding-top: 50px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="books" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
+                                    No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center; " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%; "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="social" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-right: 90px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle">   Social
+                                    Engagement</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="levels" style="padding-bottom: 30px;">
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
+                                    Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 20px; text-align: center">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-right: -20px"/>                 
+                            </div>
+                        </div>
+                        <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 45px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
+                            <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle; margin-right: 10px; font-family: Impact; ">Get your business Started today! </p>
+                            <button type="button" class="btn btn-default" style="background-color: #f75a56;  color: white; border: 0px; margin-top: 10px; font-size: 20px; display: inline-block;">Request A Demo</button>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
+                                    With Virtual Lingos, each Corporate customer has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: right; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div class="row" id="1on1" style="padding-bottom: 20px">
+                            <div class="col-sm-6" style=" padding-left: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: left; padding-left: 100px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> 1 on 1 Private Lessons </font><br/>
+                                    Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.  <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: left; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center;">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%;  "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>
+                                    With Virtual Lingos, each Corporate customer has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="platforminfo" id="nonprofitsSolution" style="display: none;" ata-pg-collapsed data-pg-collapsed>
+                        <div id="headerTab" data-pg-collapsed>
+                            <a href="#" onclick="setPLAtforminfo(0);"> 
+                                <div class="col-sm-3 col-xs-3 tab1" style="height: 115px; background-color: white; color: white; border: 1px solid #dddddd; text-align: center; padding: 10px; color: #3d3d3d">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-grey.png.png" style="width: 55px;"/>
+                                    <p> Corporate Solutions</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(1);"> 
+                                <div class="col-sm-3 col-xs-3 tab2" style="height: 130px; background-color: #f0a247; color: white; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-white.png" style="width: 80px;"/>
+                                    <p style="font-size: 18px; "> Nonprofits</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(2);"> 
+                                <div class="col-sm-3 col-xs-3 tab3" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-grey.png" style="width: 55px;"/>
+                                    <p style="margin-left: -8px;">Education</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(3);"> 
+                                <div class="col-sm-3 col-xs-3 tab4" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 17px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-grey.png" style="width: 65px;"/>
+                                    <p> Individuals</p> 
+                                </div>                 
+                            </a>
+                        </div>
+                        <div id="headerback" style="color: #fff; padding-top: 220px; padding-left: 60px;height: 590px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-nonProfit-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-white.png" style=""/>
+                            <p style="font-size:45px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">NGO’s & NONPROFIT SOLUTIONS </p>
+                            <p style="font-size: 27px; line-height: 1;">Customized English learning solutions built just for you. </p>
+                            <p style="text-align: center; margin-top: 150px;"></p>
+                        </div>
+                        <div class="row" id="overview" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-right: 20px; padding-top:70px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> Overview</font><br/>
+                                    Virtual Lingos is incredibly socially focused. When your NGO or Nonprofit signs up with V.L. you are truly bringing on a partner dedicated to helping your team or audience learn English. <br/><br/>
+                                    Let us partner with you in serving the world.  </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-overview.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="Methodology" style="padding: 50px;" data-pg-collapsed>
+                            <div class="col-sm-6" style=" text-align: center " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding: 30px; " data-pg-collapsed>
+                                <p style="color: grey; text-align: right;  margin-right: 150px;" data-pg-collapsed> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;" data-pg-collapsed>
+                            <p style=" color: #f0a247; font-family: Impact; font-size: 35px; margin-left: 20px"> Our Learning Platform</p>
+                        </div>
+                        <div class="row" id="games" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 30px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
+                                    Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="videos" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-left: 60px; padding-right: 60px; padding-top: 50px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="books" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
+                                    No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center; " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%; "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="social" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-right: 90px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle">   Social
+                                    Engagement</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="levels" style="padding-bottom: 30px;">
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
+                                    Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 20px; text-align: center">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-right: -20px"/>                 
+                            </div>
+                        </div>
+                        <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 45px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
+                            <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle; margin-right: 10px; font-family: Impact; ">Get your business Started today! </p>
+                            <button type="button" class="btn btn-default" style="background-color: #f0a247;  color: white; border: 0px; margin-top: 10px; font-size: 20px; display: inline-block;">Request A Demo</button>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
+                                    With Virtual Lingos, each Organization has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: right; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div class="row" id="1on1" style="padding-bottom: 20px">
+                            <div class="col-sm-6" style=" padding-left: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: left; padding-left: 100px;"> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> 1 on 1 Private Lessons </font><br/>
+                                    Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.  <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: left; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center;">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%;  "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>
+                                    Monthly Reporting on your users activities including average time on the platform and content learners are learning <br/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="platforminfo" id="EducationSolution" style="display: none;" data-pg-collapsed>
+                        <div id="headerTab" data-pg-collapsed>
+                            <a href="#" onclick="setPLAtforminfo(0);"> 
+                                <div class="col-sm-3 col-xs-3 tab1" style="height: 115px; background-color: white; color: white; border: 1px solid #dddddd; text-align: center; padding: 10px; color: #3d3d3d">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-grey.png.png" style="width: 55px;"/>
+                                    <p> Corporate Solutions</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(1);"> 
+                                <div class="col-sm-3 col-xs-3 tab2" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-grey.png" style="width: 55px;"/>
+                                    <p> Nonprofits</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(2);"> 
+                                <div class="col-sm-3 col-xs-3 tab3" style="height: 130px; background-color: #92b865;  color: white; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-white.png" style="width: 80px;"/>
+                                    <p style="margin-left: -8px; font-size: 18px;">Education</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(3);"> 
+                                <div class="col-sm-3 col-xs-3 tab4" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 17px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-grey.png" style="width: 65px;"/>
+                                    <p> Individuals</p> 
+                                </div>                 
+                            </a>
+                        </div>
+                        <div id="headerback" style="color: #fff; padding-top: 220px; padding-left: 60px;height: 590px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-schools-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-white.png" style=""/>
+                            <p style="font-size:45px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">UNIVERSITIES & SCHOOLS SOLUTIONS </p>
+                            <p style="font-size: 27px; line-height: 1;">Customized English learning solutions built just for you. </p>
+                            <p style="text-align: center; margin-top: 150px;"></p>
+                        </div>
+                        <div class="row" id="overview" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-right: 20px; padding-top:70px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> Overview</font><br/>
+                                    Are you looking to give your students that edge in language learning? Wouldn’t it be great for them to be able to learn 24/7 engaging with other students and teachers. <br/><br/>
+                                    Virtual Lingos has the perfect solution to meet all your needs giving your students the ultimate experience. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-overview.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="Methodology" style="padding: 50px;" data-pg-collapsed>
+                            <div class="col-sm-6" style=" text-align: center " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding: 30px; " data-pg-collapsed>
+                                <p style="color: grey; text-align: right;  margin-right: 150px;" data-pg-collapsed> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;" data-pg-collapsed>
+                            <p style=" color: #92b865; font-family: Impact; font-size: 35px; margin-left: 20px"> Our Learning Platform</p>
+                        </div>
+                        <div class="row" id="games" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 30px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
+                                    Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="videos" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-left: 60px; padding-right: 60px; padding-top: 50px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="books" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
+                                    No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center; " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%; "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="social" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-right: 90px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle">   Social
+                                    Engagement</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="levels" style="padding-bottom: 30px;">
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
+                                    Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 20px; text-align: center">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-right: -20px"/>                 
+                            </div>
+                        </div>
+                        <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 45px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
+                            <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle; margin-right: 10px; font-family: Impact; ">Get your business Started today! </p>
+                            <button type="button" class="btn btn-default" style="background-color: #92b865;  color: white; border: 0px; margin-top: 10px; font-size: 20px; display: inline-block;">Request A Demo</button>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
+                                    With Virtual Lingos, each Organization has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: right; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div class="row" id="1on1" style="padding-bottom: 20px">
+                            <div class="col-sm-6" style=" padding-left: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: left; padding-left: 100px;"> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> 1 on 1 Private Lessons </font><br/>
+                                    Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.  <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: left; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center;">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%;  "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>
+                                    Monthly Reporting on your users activities including average time on the platform and content learners are learning <br/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="platforminfo" id="IndividualsSolution" style="display: none;" data-pg-collapsed>
+                        <div id="headerTab" data-pg-collapsed>
+                            <a href="#" onclick="setPLAtforminfo(0);"> 
+                                <div class="col-sm-3 col-xs-3 tab1" style="height: 115px; background-color: white; color: white; border: 1px solid #dddddd; text-align: center; padding: 10px; color: #3d3d3d">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-grey.png.png" style="width: 55px;"/>
+                                    <p> Corporate Solutions</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(1);"> 
+                                <div class="col-sm-3 col-xs-3 tab2" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-grey.png" style="width: 55px;"/>
+                                    <p> Nonprofits</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(2);"> 
+                                <div class="col-sm-3 col-xs-3 tab3" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-grey.png" style="width: 55px;"/>
+                                    <p style="margin-left: -8px;">Education</p> 
+                                </div>                 
+                            </a>
+                            <a href="#" onclick="setPLAtforminfo(3);"> 
+                                <div class="col-sm-3 col-xs-3 tab4" style="height: 130px; background-color: #259baa;  color: white; text-align: center; padding: 17px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-white.png" style="width: 80px;"/>
+                                    <p style="font-size: 18px;"> Individuals</p> 
+                                </div>                 
+                            </a>
+                        </div>
+                        <div id="headerback" style="color: #fff; padding-top: 220px; padding-left: 60px;height: 590px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-corporate-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-white.png" style=""/>
+                            <p style="font-size:45px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">INDIVIDUALS</p>
+                            <p style="font-size: 27px; line-height: 1;">Customized English learning solutions built just for you. </p>
+                            <p style="text-align: center; margin-top: 150px;"></p>
+                        </div>
+                        <div class="row" id="overview" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-right: 20px; padding-top:70px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #259baa; font-family: Impact; font-size: 35px;"> Overview</font><br/>
+                                    Are you looking to give your students that edge in language learning? Wouldn’t it be great for them to be able to learn 24/7 engaging with other students and teachers. <br/><br/>
+                                    Virtual Lingos has the perfect solution to meet all your needs giving your students the ultimate experience. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-overview.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="Methodology" style="padding: 50px;" data-pg-collapsed>
+                            <div class="col-sm-6" style=" text-align: center " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding: 30px; " data-pg-collapsed>
+                                <p style="color: grey; text-align: right;  margin-right: 150px;" data-pg-collapsed> <font style=" color: #259baa; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;" data-pg-collapsed>
+                            <p style=" color: #259baa; font-family: Impact; font-size: 35px; margin-left: 20px"> Our Learning Platform</p>
+                        </div>
+                        <div class="row" id="games" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 30px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
+                                    Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
+                            </div>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:90%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="videos" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-left: 60px; padding-right: 60px; padding-top: 50px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="books" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
+                                    No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center; " data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%; "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="social" style="padding-bottom: 10px;" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%"/>                 
+                            </div>
+                            <div class="col-sm-6" style="padding-right: 90px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle">   Social
+                                    Engagement</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; margin-left: 10px;"/><br/>
+                                    Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
+                            </div>
+                        </div>
+                        <div class="row" id="levels" style="padding-bottom: 30px;">
+                            <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
+                                <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
+                                    Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 20px; text-align: center">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-right: -20px"/>                 
+                            </div>
+                        </div>
+                        <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 45px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
+                            <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle; margin-right: 10px; font-family: Impact; ">Get your business Started today! </p>
+                            <button type="button" class="btn btn-default" style="background-color: #259baa;  color: white; border: 0px; margin-top: 10px; font-size: 20px; display: inline-block;">Request A Demo</button>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #259baa; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
+                                    With Virtual Lingos, each Organization has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: right; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                        </div>
+                        <div class="row" id="1on1" style="padding-bottom: 20px">
+                            <div class="col-sm-6" style=" padding-left: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: left; padding-left: 100px;"> <font style=" color: #259baa; font-family: Impact; font-size: 35px;"> 1 on 1 Private Lessons </font><br/>
+                                    Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.  <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: left; margin-top: 10px;">Learn More</button></p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top: 40px; text-align: center;">
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%;  "/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="white-label" data-pg-collapsed>
+                            <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:90%"/>                 
+                            </div>
+                            <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
+                                <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #259baa; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>
+                                    Monthly Reporting on your users activities including average time on the platform and content learners are learning <br/></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="headerback" style="margin-top: 200px; color: #fff; padding-top: 200px; padding-left: 40px;height: 480px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-corporate-solutions.png); background-size: cover; 	" data-pg-collapsed>
-                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style=""/>
-                    <p style="font-size:45px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">CORPORATE SOLUTIONS </p>
-                    <p style="font-size: 30px; line-height: 1;">Customized English learning solutions built just for your business. </p>
-                    <p style="text-align: center; margin-top: 150px;"></p>
-                </div>
-                <div class="row" id="overview" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding-left: 100px; padding-right: 20px; padding-top:70px" data-pg-collapsed>
-                        <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Overview</font><br/>
-            Invest in your team’s education and Increase engagement by signing up with Virtual Lingos; the most affordable and effective way to learn a language. <br/><br/>
-Virtual Lingos primary focus is to provide the most effective and affordable solutions to businesses across LATAM. Our business model has solutions to fit any need a company might have with prices ranging from $4.00 - $200.00 per month. </p>
-                    </div>
-                    <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solution-overview.png" style="width:90%"/>                         
-                    </div>
-                </div>
-                <div class="row" id="Methodology" style="padding: 50px;" data-pg-collapsed>
-                    <div class="col-sm-6" style=" text-align: center " data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%"/>                         
-                    </div>
-                    <div class="col-sm-6" style="padding: 30px; " data-pg-collapsed>
-                        <p style="color: grey; text-align: right;  margin-right: 150px;" data-pg-collapsed> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
-                    </div>
-                </div>
-                <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;">
-                    <p style=" color: #f75a56; font-family: Impact; font-size: 35px; margin-left: 20px"> Our Learning Platform</p>
-                </div>
-                <div class="row" id="games" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding-left: 100px; padding-top: 30px" data-pg-collapsed>
-                        <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
-            Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
-                    </div>
-                    <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:90%"/>                         
-                    </div>
-                </div>
-                <div class="row" id="videos" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:90%"/>                         
-                    </div>
-                    <div class="col-sm-6" style="padding-left: 60px; padding-right: 60px; padding-top: 50px" data-pg-collapsed>
-                        <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><br/>
-            Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
-                    </div>
-                </div>
-                <div class="row" id="books" style="padding-bottom: 10px;" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
-                        <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
-            No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
-                    </div>
-                    <div class="col-sm-6" style="padding-top: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%"/>                         
-                    </div>
-                </div>
-                <div class="row" id="social" style="padding-bottom: 10px;" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding-top: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%"/>                         
-                    </div>
-                    <div class="col-sm-6" style="padding-right: 90px; padding-top: 80px" data-pg-collapsed>
-                        <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle">   Social
-Engagement</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; margin-left: 10px;"/><br/>
-            Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
-                    </div>
-                </div>
-                <div class="row" id="levels" style="padding-bottom: 30px;" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding-left: 100px; padding-top: 80px" data-pg-collapsed>
-                        <p style="color: grey; text-align: justify;margin-left: 20px; margin-right: 20px;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
-            Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
-                    </div>
-                    <div class="col-sm-6" style="padding-top: 20px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-right: -20px"/>                         
-                    </div>
-                </div>
-                <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 45px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
-                    <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle; margin-right: 10px; font-family: Impact; ">Get your business Started today! </p>
-                    <button type="button" class="btn btn-default" style="background-color: #f75a56;  color: white; border: 0px; margin-top: 10px; font-size: 20px; display: inline-block;">Request A Demo</button>
-                </div>
-                <div class="row" id="white-label" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:90%"/>                         
-                    </div>
-                    <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
-                        <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
-            With Virtual Lingos, each Corporate customer has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: right; margin-top: 10px;">Learn More</button></p>
-                    </div>
-                </div>
-                <div class="row" id="1on1" style="padding-bottom: 20px" data-pg-collapsed>
-                    <div class="col-sm-6" style=" padding-left: 60px; padding-top: 60px" data-pg-collapsed>
-                        <p style="color: grey; text-align: left; padding-left: 100px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> 1 on 1 Private Lessons </font><br/>
-            Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.  <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; float: left; margin-top: 10px;">Learn More</button></p>
-                    </div>
-                    <div class="col-sm-6" style="padding-top: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%; margin-right: -30px;"/>                         
-                    </div>
-                </div>
-                <div class="row" id="white-label" data-pg-collapsed>
-                    <div class="col-sm-6" style="padding: 40px; text-align: center" data-pg-collapsed>
-                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:90%"/>                         
-                    </div>
-                    <div class="col-sm-6" style=" padding-right: 60px; padding-top: 60px" data-pg-collapsed>
-                        <p style="color: grey; text-align: right; padding-right: 100px;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>
-            With Virtual Lingos, each Corporate customer has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/></p>
+                <div id="csMobil" style="background-color: white; margin-top: 90px;">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin-bottom: 0px;">
+                        <div class="panel panel-default" style="margin: 0px;">
+                            <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #f75a56; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="vertical-align: -8px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style=" width:34px; float: left; margin-right: 10px;"/>                                                                                                                                                                                                                                                                                                                                                                 Corporate Solutions
+                                    </a></h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" data-pg-collapsed>
+                                <div class="panel-body" style="padding:0px">
+                                    <div id="headerback" style="color: #fff; padding-top: 60px; padding-left: 40px;height: 300px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-corporate-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solutions-white.png" style="width: 100px;"/>
+                                        <p style="font-size:30px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">CORPORATE SOLUTIONS </p>
+                                        <p style="font-size: 17px; line-height: 1;">Customized English learning solutions built just for your business. </p>
+                                        <p style="text-align: center; margin-top: 150px;"></p>
+                                    </div>
+                                    <div id="overview" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top:20px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Overview</font><br/>
+                                                Invest in your team’s education and Increase engagement by signing up with Virtual Lingos; the most affordable and effective way to learn a language. <br/><br/>
+                                                Virtual Lingos primary focus is to provide the most effective and affordable solutions to businesses across LATAM. Our business model has solutions to fit any need a company might have with prices ranging from $4.00 - $200.00 per month. </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/corporate-solution-overview.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="Methodology" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top:40px " data-pg-collapsed>
+                                            <p style="color: grey; " data-pg-collapsed> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center; " data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;" data-pg-collapsed>
+                                        <p style=" color: #f75a56; font-family: Impact; font-size: 35px; line-height: 1;"> Our Learning Platform</p>
+                                    </div>
+                                    <div id="games" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 20px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify; "> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
+                                                Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="videos" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify; "> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><br/>
+                                                Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="books" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
+                                                No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
+                                        </div>
+                                        <div style="padding-left: 40px; margin-right: -15px;" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="social" data-pg-collapsed>
+                                        <div style="padding-right: 40px; padding-top: 40px; padding-left: 40px" data-pg-collapsed>
+                                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; float: left;"/>
+                                            <p style=" float: left; color: grey; color: #6b6b6b; font-family: Impact; font-size: 32px; vertical-align: -2px; line-height: 1">  Social Engagement</p>
+                                            <br/>
+                                            <div style="clear: both"></div>
+                                            <p style="color: grey; text-align: justify;"> Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
+                                        </div>
+                                        <div style="padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%; margin-left: -15px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="levels" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-top: 40px; padding-right: 40px;" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
+                                                Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
+                                        </div>
+                                        <div style="text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-top: -10px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 35px; margin-top: 20px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
+                                        <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle;  font-family: Impact; ">Get your business Started today! </p>
+                                        <button type="button" class="btn btn-default" style="background-color: #f75a56;  color: white; border: 0px; margin-top: 20px; font-size: 15px; display: inline-block;">Request A Demo</button>
+                                    </div>
+                                    <div id="white-label" data-pg-collapsed>
+                                        <div style=" padding-right: 40px; padding-left: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
+                                                With Virtual Lingos, each Corporate customer has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white;  margin-top: 10px;">Learn More</button></p>
+                                        </div>
+                                        <div style="padding-right: 40px; padding-left: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="1on1" ata-pg-collapsed data-pg-collapsed>
+                                        <div style=" padding-right: 40px; padding-left: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <font style=" color: #f75a56; font-family: Impact; font-size: 35px; line-height: 1"> 1 on 1 Private Lessons </font>
+                                            <br/>
+                                            <p style="color: grey; text-align: justify; margin-top: 5px;"> Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.</p> 
+                                            <br/>
+                                            <button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; margin-top: -30px; ">Learn More</button>
+                                        </div>
+                                        <div style=" padding-left: 40px; margin-right: -15px;" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%; "/>                             
+                                        </div>
+                                    </div>
+                                    <div id="white-label" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <font style=" color: #f75a56; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>
+                                                Monthly Reporting on your users activities including average time on the platform and content learners are learning <br/></p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-bottom: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" style="margin: 0px;">
+                            <div class="panel-heading" role="tab" id="headingThree" style="background-color: #f0a247; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="vertical-align: -8px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-white.png" style=" width:34px; float: left; margin-right: 10px;"/>                                                                                                                                                                                                                                                                                                                                                                NonProfits
+                                    </a></h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" data-pg-collapsed>
+                                <div class="panel-body" style="padding:0px">
+                                    <div id="headerback" style="color: #fff; padding-top: 60px; padding-left: 40px;height: 300px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-nonProfit-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-white.png" style="width: 100px;"/>
+                                        <p style="font-size:30px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">NGO’s & NonProfit Solutions </p>
+                                        <p style="font-size: 17px; line-height: 1;">Customized English learning solutions built just for you. </p>
+                                        <p style="text-align: center; margin-top: 150px;"></p>
+                                    </div>
+                                    <div id="overview" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top:20px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> Overview</font><br/>
+                                                Virtual Lingos is incredibly socially focused. When your NGO or Nonprofit signs up with V.L. you are truly bringing on a partner dedicated to helping your team or audience learn English. 
+                                                Let us partner with you in serving the world.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/nonprofit-overview.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="Methodology" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top:40px " data-pg-collapsed>
+                                            <p style="color: grey;" data-pg-collapsed> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center; " data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%; margin-top: 20px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;" data-pg-collapsed>
+                                        <p style=" color: #f0a247; font-family: Impact; font-size: 35px; line-height: 1;"> Our Learning Platform</p>
+                                    </div>
+                                    <div id="games" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 20px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify; "> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
+                                                Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="videos" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify; "> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><br/>
+                                                Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="books" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
+                                                No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
+                                        </div>
+                                        <div style="padding-left: 40px; margin-right: -15px;" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="social" data-pg-collapsed>
+                                        <div style="padding-right: 40px; padding-top: 40px; padding-left: 40px" data-pg-collapsed>
+                                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; float: left;"/>
+                                            <p style=" float: left; color: grey; color: #6b6b6b; font-family: Impact; font-size: 32px; vertical-align: -2px; line-height: 1">  Social Engagement</p>
+                                            <br/>
+                                            <div style="clear: both"></div>
+                                            <p style="color: grey; text-align: justify;"> Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
+                                        </div>
+                                        <div style="padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%; margin-left: -15px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="levels" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-top: 40px; padding-right: 40px;" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
+                                                Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
+                                        </div>
+                                        <div style="text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-top: -10px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 35px; margin-top: 20px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
+                                        <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle;  font-family: Impact; ">Get your business Started today! </p>
+                                        <button type="button" class="btn btn-default" style="background-color: #f0a247;  color: white; border: 0px; margin-top: 20px; font-size: 15px; display: inline-block;">Request A Demo</button>
+                                    </div>
+                                    <div id="white-label" data-pg-collapsed>
+                                        <div style=" padding-right: 40px; padding-left: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify"> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
+                                                With Virtual Lingos, each Organization has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white;  margin-top: 10px;">Learn More</button></p>
+                                        </div>
+                                        <div style="padding-right: 40px; padding-left: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="1on1" ata-pg-collapsed data-pg-collapsed>
+                                        <div style=" padding-right: 40px; padding-left: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <font style=" color: #f0a247; font-family: Impact; font-size: 35px; line-height: 1"> 1 on 1 Private Lessons </font>
+                                            <br/>
+                                            <p style="color: grey; text-align: justify; margin-top: 5px;"> Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.</p> 
+                                            <br/>
+                                            <button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; margin-top: -30px; ">Learn More</button>
+                                        </div>
+                                        <div style=" padding-left: 40px; margin-right: -15px;" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%; "/>                             
+                                        </div>
+                                    </div>
+                                    <div id="white-label" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <font style=" color: #f0a247; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>Monthly Reporting on your users activities including average time on the platform and content learners are learning <br/></p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-bottom: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" style="margin: 0px;">
+                            <div class="panel-heading" role="tab" id="headingFour" style="background-color: #92b865; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="vertical-align: -9px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-white.png" style=" width:34px; float: left; margin-right: 10px;"/>
+                                        Education 
+                                    </a></h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body" style="padding:0px">
+                                    <div id="headerback" style="color: #fff; padding-top: 60px; padding-left: 40px;height: 300px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-schools-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-white.png" style="width: 100px;"/>
+                                        <p style="font-size:30px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">Universities & Schools Solutions </p>
+                                        <p style="font-size: 17px; line-height: 1;">Customized English learning solutions built just for you.</p>
+                                        <p style="text-align: center; margin-top: 150px;"></p>
+                                    </div>
+                                    <div id="overview" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top:20px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> Overview</font><br/>
+                                                Are you looking to give your students that edge in language learning? Wouldn’t it be great for them to be able to learn 24/7 engaging with other students and teachers. 
+                                                Virtual Lingos has the perfect solution to meet all your needs giving your students the ultimate experience.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/education-overview.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="Methodology" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top:40px " data-pg-collapsed>
+                                            <p style="color: grey;" data-pg-collapsed> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> Our Methodology  </font><br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white">Learn More</button></p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center; " data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/methology-graph.png" style="width:100%; margin-top: 20px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="OurLearningPlatform" style="padding: 40px; margin-bottom: -40px;" data-pg-collapsed>
+                                        <p style=" color: #92b865; font-family: Impact; font-size: 35px; line-height: 1;"> Our Learning Platform</p>
+                                    </div>
+                                    <div id="games" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 20px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify; "> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-games.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Games</font><br/>
+                                                Games built to engage learners and drive success including Hangman, Flashcards, and much more. Customize each game based on your needs using filters by level or topics.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/games-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="videos" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify; "> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-video.png" style="width: 80px; margin-left: 10px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Videos</font><br/>
+                                                Video Lessons are a key component of our platform giving learners exactly what they need to succeed. Virtual Lingos adds on average 1 video a day to our platform making sure we are up to date with the latest learning techniques.  </p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/video-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="books" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-books.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Books</font><br/>
+                                                No need to buy books anymore because with the V.L. platform you have access to 1,000’s of books from beginner levels to the most advanced. </p>
+                                        </div>
+                                        <div style="padding-left: 40px; margin-right: -15px;" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/books-ie.png" style="width: 100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="social" data-pg-collapsed>
+                                        <div style="padding-right: 40px; padding-top: 40px; padding-left: 40px" data-pg-collapsed>
+                                            <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-social-engagement.png" style="width: 80px; float: left;"/>
+                                            <p style=" float: left; color: grey; color: #6b6b6b; font-family: Impact; font-size: 32px; vertical-align: -2px; line-height: 1">  Social Engagement</p>
+                                            <br/>
+                                            <div style="clear: both"></div>
+                                            <p style="color: grey; text-align: justify;"> Connect with Friends and Teachers within the platform via Chat or  Live Video to curve the learning experience and multiply results.  </p>
+                                        </div>
+                                        <div style="padding-right: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/social-engagement-ie.png" style="width:100%; margin-left: -15px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="levels" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-top: 40px; padding-right: 40px;" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/platform-levels.png" style="width: 80px;"/><font style=" color: #6b6b6b; font-family: Impact; font-size: 35px; vertical-align: middle"> Levels</font><br/>
+                                                Our 6 levels include 50 concepts full of games, videos and exercises to make sure our learners always know where their are going confident they on the right track to success. </p>
+                                        </div>
+                                        <div style="text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/levels-ie.png" style="width: 100%; margin-top: -10px;"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 35px; margin-top: 20px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;" data-pg-collapsed>
+                                        <p style="font-size:25px; margin-bottom: -15px;  display: inline-block; vertical-align: middle;  font-family: Impact; ">Get your business Started today! </p>
+                                        <button type="button" class="btn btn-default" style="background-color: #92b865;  color: white; border: 0px; margin-top: 20px; font-size: 15px; display: inline-block;">Request A Demo</button>
+                                    </div>
+                                    <div id="white-label" data-pg-collapsed>
+                                        <div style=" padding-right: 40px; padding-left: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify"> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> White-Labeling  </font><br/>
+                                                With Virtual Lingos, each Organization has the opportunity to not only have access to our amazing platform but, one dedicated to their teams fully customized from content to colors. <br/><button type="button" class="btn btn-default" style="background-color: #30aed5; color: white;  margin-top: 10px;">Learn More</button></p>
+                                        </div>
+                                        <div style="padding-right: 40px; padding-left: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/white-label-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                    <div id="1on1" ata-pg-collapsed data-pg-collapsed>
+                                        <div style=" padding-right: 40px; padding-left: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <font style=" color: #92b865; font-family: Impact; font-size: 35px; line-height: 1"> 1 on 1 Private Lessons </font>
+                                            <br/>
+                                            <p style="color: grey; text-align: justify; margin-top: 5px;"> Looking for the quickest way to learn English? Sign your team up for our advanced services including 1 on 1 private customized lessons with guaranteed fluency in as little as 1 year.</p> 
+                                            <br/>
+                                            <button type="button" class="btn btn-default" style="background-color: #30aed5; color: white; margin-top: -30px; ">Learn More</button>
+                                        </div>
+                                        <div style=" padding-left: 40px; margin-right: -15px;" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/1-on-1.png" style="width:100%; "/>                             
+                                        </div>
+                                    </div>
+                                    <div id="white-label" data-pg-collapsed>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-top: 40px" data-pg-collapsed>
+                                            <p style="color: grey; text-align: justify;"> <font style=" color: #92b865; font-family: Impact; font-size: 35px;"> Reporting  </font><br/>Monthly Reporting on your users activities including average time on the platform and content learners are learning. <br/></p>
+                                        </div>
+                                        <div style="padding-left: 40px; padding-right: 40px; padding-bottom: 40px; text-align: center" data-pg-collapsed>
+                                            <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/review-ie.png" style="width:100%"/>                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" style="margin: 0px;" data-pg-collapsed>
+                            <div class="panel-heading" role="tab" id="headingFive" style="background-color: #259baa; color: white; height: 50px; padding: 5px;">
+                                <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="vertical-align: -11px">
+                                        <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/Individuals-white.png" style=" width:34px; float: left; margin-right: 10px; margin-top: 6px;"/>
+                                        Individuals
+                                    </a></h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <h3 style="color: #259baa; font-weight: bold; ">Individuals</h3>
+                                    <p style="color: grey; text-align: justify;">Want a language solution just for you? Virtual Lingos not only provides it’s services to some of the top companies in Latin America but, also to individuals just like yourself everyday. Our custom solutions are here to meet your every need! </p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> Our Platform<br/> Pricing</p>
+                                    <p style="text-decoration: underline; float: left; margin: 10px; line-height: 2;"> 1 on 1 Lessons<br/> Our Mission & Vision</p>
+                                    <div style="clear: both;"></div>
+                                    <button type="button" class="btn btn-default" style="background-color: #259baa;  color: white; border: 0px; font-size: 15px; margin-top: 20px;">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="footer" style="min-height: 200px; background-color: #1b1b1b; padding: 50px; color: white;" data-pg-collapsed>
-                    <div class="col-sm-5">
-                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/logo-white-blue.png" style="width: 70%; margin-bottom: 30px; margin-top: -10px;"/>
+                    <div class="col-sm-3 col-md-5">
+                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/logo-white-blue.png" style="width: 80%; margin-bottom: 30px; margin-top: -10px;"/>
                         <p>Copyright © 2016 </p>
                         <p>Todos los derechos reservados </p>
                     </div>
-                    <div class="col-sm-2" style="">
-                        <a class="footerlink"> <p>Why Virtual Lingos </p> </a>
-                        <a> <p>Platform </p> </a>
-                        <a> <p>Company </p> </a>
-                        <a> <p>Pricing </p> </a>
+                    <div class="col-sm-3 col-md-2 footerlink" style="">
+                        <a  class="footerlink" href="#vlinfo" target="_blank">  <p>Why Virtual Lingos </p> </a>
+                        <a  href="#" target="_blank">  <p>Platform </p> </a>
+                        <a  href="#" target="_blank">  <p>Company </p> </a>
+                        <a  href="#" target="_blank">  <p >Pricing </p> </a>
                     </div>
-                    <div class="col-sm-2">
-                        <a class="footerlink" href="https://www.facebook.com/Virtuallingos/"> <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-fb.png" style="width: 22px; margin-right: 5px;"/> VirtualLingos </p> </a>
-                        <a class="footerlink" href="https://twitter.com/virtuallingos"> <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-tw.png" style="width: 22px; margin-right: 5px;"/> @virtuall ingos </p> </a>
-                        <a class="footerlink" href="https://www.linkedin.com/company/advint-international?trk=top_nav_home"> <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-in.png" style="width: 22px; margin-right: 5px;"/> Virtual Lingos </p> </a>
+                    <div class="col-sm-3 col-md-2 footerlink">
+                        <a href="https://www.facebook.com/Virtuallingos/" target="_blank"> <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-fb.png" style="width: 22px; margin-right: 5px;"/>VirtualLingos </p> </a>
+                        <a  href="https://twitter.com/virtuallingos" target="_blank" > <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-tw.png" style="width: 22px; margin-right: 5px;"/>@virtuallingos </p> </a>
+                        <a  href="https://www.linkedin.com/company/advint-international?trk=top_nav_home" target="_blank"> <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-in.png" style="width: 22px; margin-right: 5px;"/>Virtual Lingos </p> </a>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-md-3">
                         <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-call.png" style="width: 22px; margin-right: 5px;"/> (505) 2266-0509. </p>
                         <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-email.png" style="width: 22px; margin-right: 5px;"/> info@virtuallingos.com  </p>
                     </div>
                 </div>
             </div>
         </div>
-        <script> 
+        <script>
             $(document).ready(function () {
-                
+
                 $("#net").height($("#video").height());
                 $(window).resize(function () {
 
                     var h = $("#video").height();
                     $("#net").height(h);
                 });
-                
+
                 $("#vlInfoArrow").click(function () {
 
                     var h = parseInt($("#headerText").css('height').toString().split("p")[0]);
-                    $(window).scrollTop(h-47);
+                    $(window).scrollTop(h - 47);
                 });
-                
+
                 $(window).scroll(function (event) {
 
                     var scroll = $(window).scrollTop();
@@ -366,11 +1189,11 @@ Engagement</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepositor
                     }
 
                 });
-                
+
                 $(".mArrow").hover(function () {
 
-                    $(".mArrow").each(function(){
-                        
+                    $(".mArrow").each(function () {
+
                         $($(this).children().get(0)).css("display", "none");
                     });
                     $($(this).children().get(0)).css("display", "block");
@@ -386,7 +1209,16 @@ Engagement</font><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepositor
                 $($(".vlinformation").get(index)).css("display", "block");
                 $($(".mArrow").get(index)).append('<div class="tempArrow" style="position: absolute; top: 0px; left: -33px;"><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-0' + (index + 1) + '.png"/></div>');
             }
-            
+            function setPLAtforminfo(index) {
+
+                $(".platforminfo").each(function () {
+
+                    $(this).css("display", "none");
+                });
+                $($(".platforminfo").get(index)).css("display", "block");
+
+            }
+
         </script>
     </body>
 </html>
