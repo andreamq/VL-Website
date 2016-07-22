@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="https://d3j6gp0qtr02vj.cloudfront.net/media/imagenes/vl_icon.ico">
+        <title>Virtual Lingos</title>
+        <link href="https://d3j6gp0qtr02vj.cloudfront.net/media/js/platform/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://d3j6gp0qtr02vj.cloudfront.net/media/js/platform/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://d3j6gp0qtr02vj.cloudfront.net/media/js/platform/bootstrap.min.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+         <![endif]-->
+    </head>
+    <body>
+        <style>
+            .flip
+            {
+                -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                -ms-filter: "FlipH";
+                filter: FlipH;
+            }
+
+            @media only screen and (max-width: 1280px)
+            {
+                #video
+                {
+                    width: 1280px !important;
+                }
+                #net
+                {
+                    width: 1280px !important;
+                }
+            }
+
+            @media only screen and (min-width: 1280px)
+            {
+                #video
+                {
+                    height: auto !important;
+                }
+            }
+
+            .navbar-nav li a:hover {
+
+                color: #30aed5 !important;
+            }
+
+            .footerlink a:link {
+
+                color: white;
+
+            }
+            .footerlink a:visited {
+
+                color: white;
+                text-decoration: none;
+            }
+            .footerlink a:hover {
+
+                color: #30aed5;
+                text-decoration: none;
+            }
+            .footerlink a:active {
+
+
+                text-decoration: none;
+            }
+
+            @media only screen and (max-width:  770px)
+            {
+                #CSexperiencedesktop
+                {
+                    display: none;
+                }
+                #CSexperiencemobil
+                {
+                    display: block;
+                }
+                .teamimg
+                {
+                    margin-left: 40px;
+                }
+                #footer
+                {
+                    padding: 50px !important;
+                    font-size: 11px;
+                }
+                #iconshdr
+                {
+                    display: inline-block;
+
+                }
+                #messageicon
+                {
+                    margin-right: 10px;
+                }
+                .CSheaders
+                {
+                    text-align: center;
+                }
+            }
+
+
+
+            @media only screen and (min-width: 770px)
+            {
+                #CSexperiencedesktop
+                {
+                    display: block;
+                }
+            }
+            #CSexperiencemobil
+            {
+                display: none;
+            }
+
+            .CustomerTab:hover
+            {
+                background-color: #30aed5 !important;
+                color: #ffffff !important;
+            }
+
+
+
+
+
+        </style>
+        <div class="container-fluid" style="position: relative;">
+            <div id="code" style="position: absolute; top: 0px; left: 0px; z-index: 2; width: 100%; height: auto; overflow-x: hidden;">
+                <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: white; border-bottom: 1px solid #bcbcbc;" data-pg-collapsed>
+                    <div id="header1" style="background-color: #343434; height: 40px; padding: 5px; font-size: 12px;" data-pg-collapsed>
+                        <li style="display: inline-block; float: right; margin: 7px;">
+                            <a href="#" style="color: #30aed5; ">Login</a>
+                        </li>
+                        <li style="display: inline-block; float: right; margin: 7px;">
+                            <a id="customerServiceLink" href="#" style="color: white; ">Support</a>
+                        </li>
+                        <li style="display: inline-block; float: right; margin: 7px;">
+                            <a href="#" style="color: white; ">Blog</a>
+                        </li>
+                        <li style="display: inline-block; float: right; margin:7px;">
+                            <a href="#" style="color: white; ">Company</a>
+                        </li>
+                    </div>
+                    <div id="header2" data-pg-collapsed>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#343434;">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" id="HomePageLink" href="#">
+                                <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/logo-blue.png" style="width:180px; margin-top: -5px;"/>
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" style="float: right;  border-top: 0px" data-pg-collapsed>
+                            <ul class="nav navbar-nav" data-pg-collapsed style="text-align: right;">
+                                <li>
+                                    <a id="PlatformLink" href="#">Platform</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#">(505) 2266-0509</a>
+                                </li>
+                                <li id="iconshdr">
+                                    <a  href="#" style="width: 40px; height: 50px">
+                                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/header-call.png" style="width: 25px; "/>
+                                    </a>
+                                </li>
+                                <li id="iconshdr">
+                                    <a  href="#" style="width: 40px; height: 50px">
+                                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/header-chat.png" style="width: 25px; "/>
+                                    </a>
+                                </li>
+                                <li id="iconshdr">
+                                    <a  id="messageicon" href="#" style=" width: 40px; height: 50px">
+                                        <img  alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/header-message.png" style="width: 25px; "/>
+                                    </a>
+                                </li>
+                                <li style=" background-color: #30aed5; padding: 13px; height: 50px; margin-left: 10px;">
+                                    <p style="vertical-align: center;"> <font onclick="window.location.href = '#'" style="cursor: pointer;  color: white; font-weight: bold; width: 130px; ">Get a Demo</font> </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+                <div id="cservicedesktop" style="margin-top: 90px;">
+                    <div class="customerinfo" id="">
+                        <div id="headerback" style="color: #fff; padding-top: 200px; padding-left: 60px;height: 480px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/back-customer-solutions.png); background-size: cover; 	" data-pg-collapsed>
+                            <p style="font-size:55px; margin-bottom: 5px; line-height: 1; font-family: Impact; ">CUSTOMER SERVICES</p>
+                            <p style="font-size: 30px; line-height: 1;">We’re here to serve you!</p>
+                            <p style="text-align: center; margin-top: 150px;"></p>
+                        </div>
+                        <div id="headerTab" data-pg-collapsed>
+                            <a class="page-scroll" href="#support"> 
+                                <div class="col-sm-6 col-xs-6 CustomerTab " style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 16px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/support.png" style="width: 55px;"/>
+                                    <p style="margin-left: -8px;">Support</p> 
+                                </div>                 
+                            </a>
+                            <a class="page-scroll" href="#training"> 
+                                <div class="col-sm-6 col-xs-6 CustomerTab" style="height: 115px; background-color: white; border: 1px solid #dddddd; color: #3d3d3d; text-align: center; padding: 17px;">
+                                    <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/training.png" style="width: 65px;"/>
+                                    <p> Trainning</p> 
+                                </div>                 
+                            </a>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div id="support" data-pg-collapsed>
+                            <div style="padding: 50px; text-align: center; background-color: #f9f9f9; " data-pg-collapsed>
+                                <p style="color: grey; margin-left: 20px; margin-right: 20px;"> <font style=" color: #30aed5; font-family: Impact; font-size: 40px;">Our Commitment To Service</font>
+                                <p><p style="padding-left: 50px; padding-right: 50px; color: grey "> Virtual Lingos is dedicated to being the #1 company in Customer Service in Latin America. Thought this we make a pledge to treat you and your organization with the respect you deserve. Our team is here to serve you in any way you need; just ask! </p>
+                            </div>
+                        </div>
+                        <div class="row" data-pg-collapsed>
+                            <div class="col-sm-6 col-xs-10  col-xs-offset-1" style="padding:40px" data-pg-collapsed>
+                                <p class="CSheaders" style=" color: #30aed5; font-family: Impact; font-size: 35px; "> Customer Support</p>
+                                <p style="color: grey; text-align: justify;"> <br/>
+                                    Are you looking to give your students that edge in language learning? Wouldn’t it be great for them to be able to learn 24/7 engaging with other students and teachers. <br/><br/>
+                                    Virtual Lingos has the perfect solution to meet all your needs giving your students the ultimate experience.</p>
+                            </div>
+                            <div class="col-sm-4  teamimg " style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/customer-team.png" style="width:100%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="customerSupport" style="padding:70px; text-align: center; background-color: #f9f9f9; " data-pg-collapsed>
+                            <p style="color: grey; margin-left: 20px; margin-right: 20px;"> <font style=" color: #30aed5; font-family: Impact; font-size: 40px;">Customer Support</font><div class="col-sm-3" style="padding: 30px;">
+                                <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/knowledge-base.png" style="width: 100px; margin-bottom: 10px;"/>
+                                <a style="color: #30aed5; text-decoration: underline; cursor: pointer; "> <p> Access our <br/> Knowledge Base </p> </a>
+                            </div><div class="col-sm-3" style="padding: 30px;">
+                                <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/call.png" style="width: 78px; margin-bottom: 10px;"/>
+                                <p> Call us at <br/> (505) 2266-0509.</p>
+                            </div><div class="col-sm-3" style="padding: 30px;">
+                                <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/support-tiket.png" style="width: 90px; margin-bottom: 10px;"/>
+                                <p> Open a support ticket <br/><a style="color: #30aed5; text-decoration: underline; cursor: pointer; "> support@ONTRAPORT.com </a></p>
+                            </div><div class="col-sm-3" style="padding: 30px;">
+                                <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/live-chat.png" style="width: 100px; margin-bottom: 10px;"/>
+                                <p> Hop on a live chat <br/>
+                                    by clicking <a style="color: #30aed5; text-decoration: underline; cursor: pointer; "> here </a></p>
+                            </div>
+                        </div>
+                        <div id="training" data-pg-collapsed>
+                            <div style="padding: 50px; text-align: center; " data-pg-collapsed>
+                                <p style="color: grey; margin-left: 20px; margin-right: 20px;"> <font style=" color: #30aed5; font-family: Impact; font-size: 40px;">Training</font>
+                                <p><p style="padding-left: 50px; padding-right: 50px; color: grey "> How do you want to grow your Business, NGO or School? 
+                                    Learn from our experts at Virtual Lingos with expertise in several areas of operation.  </p>
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: #f9f9f9; " data-pg-collapsed>
+                            <div class="col-sm-6 col-xs-10  col-xs-offset-1" style="padding:40px" data-pg-collapsed>
+                                <p class="CSheaders" style=" color: #30aed5; font-family: Impact; font-size: 35px; "> Customer / Student Experience</p>
+                                <p style="color: grey; text-align: justify;"> <br/>
+                                    Our founder & CEO JC Hite has a heart for Serving others and a passion for bettering the experience of clients and students. Are you looking for training and development that can drive more engagement, increase satisfaction and ultimately help your organization meet their goals. <br/><br/>
+                                    Call us today to learn more about JC and how he can serve your company.</p>
+                            </div>
+                            <div class="col-sm-4 teamimg " style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/customer_CEO.png" style="width:80%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" id="CSexperiencedesktop" ata-pg-collapsed>
+                            <div class="col-sm-4 col-xs-offset-1" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/customer_curriculum.png" style="width:80%"/>                 
+                            </div>
+                            <div class="col-sm-6 col-xs-10 col-xs-offset-1 " style="padding:40px" data-pg-collapsed>
+                                <p style=" color: #30aed5; font-family: Impact; font-size: 35px; text-align: right; "> Customer / Student Experience</p>
+                                <p style="color: grey; text-align: justify;"> <br/>
+                                    Is your team looking to reestablish your curriculum or build it from scratch. Our Curriculum Director has over 10 years of experience in Curriculum design and implementation & is here to serve you. <br/><br/>
+                                    Call us today to learn more about how our team can serve your organization. </p>
+                            </div>
+                        </div>
+                        <div class="row" id="CSexperiencemobil" ata-pg-collapsed>
+                            <div class="col-sm-6 col-xs-10 col-xs-offset-1 " style="padding:40px" data-pg-collapsed>
+                                <p style=" color: #30aed5; font-family: Impact; font-size: 35px; text-align: center; "> Customer / Student Experience</p>
+                                <p style="color: grey; text-align: justify;"> <br/>
+                                    Is your team looking to reestablish your curriculum or build it from scratch. Our Curriculum Director has over 10 years of experience in Curriculum design and implementation & is here to serve you. <br/><br/>
+                                    Call us today to learn more about how our team can serve your organization. </p>
+                            </div>
+                            <div class="col-sm-4 col-xs-offset-1" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/customer_curriculum.png" style="width:80%"/>                 
+                            </div>
+                        </div>
+                        <div class="row" style="background-color: #f9f9f9; " data-pg-collapsed>
+                            <div class="col-sm-6 col-xs-10  col-xs-offset-1" style="padding:40px" data-pg-collapsed>
+                                <p class="CSheaders" style=" color: #30aed5; font-family: Impact; font-size: 35px; "> Teacher Training & Development</p>
+                                <p style="color: grey; text-align: justify;"> <br/>
+                                    Are you looking to take your Teachers to the next level? From Student Experience to Tips & Tricks to engaging learners our team is here to help your organization get to the next level. </p>
+                            </div>
+                            <div class="col-sm-4 teamimg" style="padding: 40px; text-align: center" data-pg-collapsed>
+                                <img class="img-responsive" alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/customer_teacher.png" style="width:80%"/>                 
+                            </div>
+                        </div>
+                        <div id="customerService" style=" height: 180px; padding-left: 10px; padding-top: 45px; background: url(https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/background-request-demo.png); background-size: cover; color: white; text-align: center;">
+                            <button type="button" class="btn btn-default" style="background-color: #0ba6df;  color: white; border: 0px; margin-top: 10px; font-size: 20px; display: inline-block;">Call us today to learn more!  </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer" style="min-height: 200px; background-color: #1b1b1b; padding: 50px; color: white;" data-pg-collapsed>
+                    <div class="col-sm-3 col-md-5">
+                        <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/logo-white-blue.png" style="width: 80%; margin-bottom: 30px; margin-top: -10px;"/>
+                        <p>Copyright © 2016 </p>
+                        <p>Todos los derechos reservados </p>
+                    </div>
+                    <div class="col-sm-3 col-md-2 footerlink" style="">
+                        <a  class="footerlink" href="#vlinfo" target="_blank">  <p>Why Virtual Lingos </p> </a>
+                        <a  href="#" target="_blank">  <p>Platform </p> </a>
+                        <a  href="#" target="_blank">  <p>Company </p> </a>
+                        <a  href="#" target="_blank">  <p >Pricing </p> </a>
+                    </div>
+                    <div class="col-sm-3 col-md-2 footerlink">
+                        <a href="https://www.facebook.com/Virtuallingos/" target="_blank"> <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-fb.png" style="width: 22px; margin-right: 5px;"/>VirtualLingos </p> </a>
+                        <a  href="https://twitter.com/virtuallingos" target="_blank" > <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-tw.png" style="width: 22px; margin-right: 5px;"/>@virtuallingos </p> </a>
+                        <a  href="https://www.linkedin.com/company/advint-international?trk=top_nav_home" target="_blank"> <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-in.png" style="width: 22px; margin-right: 5px;"/>Virtual Lingos </p> </a>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-call.png" style="width: 22px; margin-right: 5px;"/> (505) 2266-0509. </p>
+                        <p> <img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/footer-email.png" style="width: 22px; margin-right: 5px;"/> info@virtuallingos.com  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var domain = "http://wp.virtuallingos.com/";
+
+            $(document).ready(function () {
+
+                $("#PlatformLink").attr("href", domain + "platform/");
+                $("#HomePageLink").attr("href", domain + "index/");
+                $("#CustomerServiceLink").attr("href", domain + "customer-service/");
+
+                $("#net").height($("#video").height());
+                $(window).resize(function () {
+
+                    var h = $("#video").height();
+                    $("#net").height(h);
+                });
+
+                $("#vlInfoArrow").click(function () {
+
+                    var h = parseInt($("#headerText").css('height').toString().split("p")[0]);
+                    $(window).scrollTop(h - 47);
+                });
+
+                $(window).scroll(function (event) {
+
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 40) {
+
+                        $("#header1").css("display", "none");
+                    } else {
+
+                        $("#header1").css("display", "block");
+                    }
+
+                });
+
+                $(".mArrow").hover(function () {
+
+                    $(".mArrow").each(function () {
+
+                        $($(this).children().get(0)).css("display", "none");
+                    });
+                    $($(this).children().get(0)).css("display", "block");
+                });
+            });
+            function setVLInformation(index) {
+
+                $('.tempArrow').remove();
+                $(".vlinformation").each(function () {
+
+                    $(this).css("display", "none");
+                });
+                $($(".vlinformation").get(index)).css("display", "block");
+                $($(".mArrow").get(index)).append('<div class="tempArrow" style="position: absolute; top: 0px; left: -33px;"><img alt="" src="https://s3-us-west-2.amazonaws.com/vlrepository/website/Images/homepage/vmenu-0' + (index + 1) + '.png"/></div>');
+            }
+            function setPLAtforminfo(index) {
+
+                $(".platforminfo").each(function () {
+
+                    $(this).css("display", "none");
+                });
+                $($(".platforminfo").get(index)).css("display", "block");
+
+            }
+            function setPLAtforminfomovil(index) {
+
+                $(".platforminfomovil").each(function () {
+
+                    $(this).css("display", "none");
+                });
+                $($(".platforminfomovil").get(index)).css("display", "block");
+
+            }
+
+        </script>
+    </body>
+</html>
+

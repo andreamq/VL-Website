@@ -232,7 +232,7 @@
                             <a href="#" style="color: #30aed5; ">Login</a>
                         </li>
                         <li style="display: inline-block; float: right; margin: 7px;">
-                            <a href="#" style="color: white; ">Support</a>
+                            <a id="customerServiceLink" href="#" style="color: white; ">Support</a>
                         </li>
                         <li style="display: inline-block; float: right; margin: 7px;">
                             <a href="#" style="color: white; ">Blog</a>
@@ -484,7 +484,7 @@
                     <p style="font-size:60px; font-weight: bold; margin-bottom: -15px; line-height: 1 ">5 Star Customer Service </p>
                     <h3>Our goal is to be the number 1 company <br/>
                         in Latin America in Customer Satisfaction. </h3>
-                    <button type="button" class="btn btn-default" style="background-color: #30aed5;  color: white; border: 0px; margin-top: 20px; font-size: 20px;">Learn More</button>
+                    <button id="customerServiceLink" type="button" class="btn btn-default" style="background-color: #30aed5;  color: white; border: 0px; margin-top: 20px; font-size: 20px;">Learn More</button>
                 </div>
                 <section id="testimonials" style="padding: 20px; background-color: white; ">
                     <div class="container" data-pg-collapsed>
@@ -625,6 +625,7 @@
 
                 $("#PlatformLink").attr("href", domain + "platform/");
                 $("#HomePageLink").attr("href", domain + "index/");
+                $("#CustomerServiceLink").attr("href", domain + "customer-service/");
 
                 $("#net").height($("#video").height());
                 $(window).resize(function () {
